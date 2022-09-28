@@ -86,6 +86,27 @@ main{
     background: #f4f4f4;
 }
 
+/* home page button */
+/* -------------------------- */
+.btnn{
+    padding: 0.5rem 2rem;
+    border: 3px rgb(0, 0, 0) dashed;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: rgb(225, 222, 222);
+    transition: background 500ms ease;
+}
+
+.btnn:hover{
+    background: #de3131;
+}
+
+/* 
+
+*/
+
 #header{
     padding: 1.5rem;
     text-align: center;
@@ -141,6 +162,9 @@ footer h3{
 
 @media(min-width :700px){
     .btn{
+        padding: 1rem 3rem;
+    }
+    .btnn{
         padding: 1rem 3rem;
     }
 }
