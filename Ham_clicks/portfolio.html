@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/pstyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="loader">
+        <div id="wrapperload">
+            <div class="elem">
+                <img src="/images/name1.png" alt="">
+            </div>
+            <div class="elem">
+                <h2>Web developer</h2>
+            </div>
+            <div class="elem">
+                <h2>Photographer</h2>
+            </div>
+            <div class="elem">
+                <img src="/images/name1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="bg">
+        <nav>
+            <img class="navitem" src="images/logo.png" alt="">
+            <div id="links">
+                <a class="navitem" href="index.html"><strong>Home</strong></a>
+                <a class="navitem" href="#">Contact</a>
+                <a class="navitem" href="ham.clicks.html">Projects</a>
+                <i class="navitem ri-search-line"></i>
+                <i class="navitem ri-menu-line" id="menu" ></i>
+            </div>
+            
+        </nav>
+        <div id="sections">
+            <img class="navitem" id="splash" src="/images/rightSplash.png" alt="">
+            <div id="left">
+                <div id="smline"></div>
+                <h4 class="leftitem">
+                    Hello, I am 👋
+                </h4>
+                <img class="leftitem" src="./images/name1.png" alt="">
+                <h5 class="leftitem">A beginner web <span>developer</span>.</h5>
+                <div class="leftitem" id="playbtn">
+                    <img class="leftitem" src="/images/play.png" alt="">
+                    <a id="mywork" href="ham.clicks.html"><h5>See my <span class="bold">work profile</span></h5></a>
+                </div>
+                <div class="leftitem" id="contact">
+                    <h3>Contact me</h3>
+                    <h6>Email: <a href="mailto:user@domain.com?Subject=Hello%20User"><span>hammaadahmar123@gmail.com</span></a></h6>
+                </div>
+            </div>
+            <div id="right">
+                <img src="/images/mainimg.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+<!-- when clicking on the menu icon the transition happens -->
+    <script>
+        var menu = document.querySelector('#menu');
+        var bg = document.querySelector('#bg');
+
+        menu.addEventListener('click', function(){
+            bg.style.transform = 'scale(.8)';
+            bg.style.borderRadius = '10px';
+            bg.style.boxShadow = '0px 150px 45px -90px rgba(255, 111, 0,0.3)';
+        })
+    </script>
+    <!--  -->
+</body>
+</html>
